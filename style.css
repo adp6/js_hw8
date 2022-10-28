@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+.flex {
+    display: flex;
+    gap: 2%;
+}
+.save-item{
+    display: inline-block;
+    width: 15%;
+    text-align: end;
+}
+ul {
+    width: 20%;
+    padding: 0;
+}
+li {
+    border: 2px solid black;
+    padding: 5px;
+}
+.secondTask span {
+    display: block;
+    padding: 5px;
+}
