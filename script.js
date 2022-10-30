@@ -47,13 +47,13 @@ window.onload = ()=> {
     //second task
     let images = [
         {
-            imgPath:'image.png',
+            imgPath:'image/image.png',
             alt:'png image',
             href:'https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png'
         },
 
         {
-            imgPath:'img/image.png',
+            imgPath:'image/image1.png',
             alt:'png image',
             href:'https://img.com/60903073638.jpg'
         }
@@ -62,7 +62,7 @@ window.onload = ()=> {
     for (let i = 0; i<images.length; i++) {
         const {imgPath, alt, href} = images[i];
         p = document.createElement('p');
-        p.innerHTML = `${alt} ${href}`
+        p.innerHTML = `<img src="${imgPath}" alt="${alt}"><br> <a href ='${href}' target='blank'>link</a>'`
         fragment.appendChild(p)
         divSecondTask.appendChild(fragment)
     }
@@ -111,6 +111,7 @@ window.onload = ()=> {
             fragment.appendChild(divColumn1);
             div.appendChild(fragment);
             for(let i = 0; i!=11; i++) {
+                
                 let divNew = document.createElement("div")
                 divNew.style.display = "flex";
                 divNew.innerHTML = "";
@@ -123,7 +124,6 @@ window.onload = ()=> {
                 divColumn1.appendChild(divNew); 
             }
         }
-        
     }
     seaBattle()
 }
